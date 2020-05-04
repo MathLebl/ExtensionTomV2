@@ -1,0 +1,28 @@
+{
+  "name": "Extension de Thomas V2",
+  "version": "1.0",
+  "description": "L'extension officielle de Thomas",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icons/favicon-96.ico",
+    "default_title": "ExdeTo"
+  },
+   "background": {
+    "scripts": ["execute.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "exclude_matches": [
+      ],
+      // "js": ["scripts/analyzeText-appendTags.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
