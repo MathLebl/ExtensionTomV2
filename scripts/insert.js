@@ -27,30 +27,39 @@ function insertModal() {
   #TomModal {
     z-index: 50;
     position: fixed;
-    background-color: rgba(0,0,0,0.4);
-    left: 0;
+    right: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 550px;
+    width: 30%;
   }
 
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
     border: 1px solid #888;
-    min-height: 30vh;
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    position: relative
+    position: relative;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: scroll;
   }
 
   #closeTomModal {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     font-size: 28px;
     font-weight: bold;
+    z-index: 2;
   }
 
   #closeTomModal:hover, #closeTomModal:focus {
@@ -59,9 +68,6 @@ function insertModal() {
     cursor: pointer;
   }
 
-  h1 {
-
-  }
   </style>`
 
   // inserting modal in HTML
@@ -70,8 +76,10 @@ function insertModal() {
       <div id="TomModal" class="modal-container">
       <div class="modal-content">
       <span id="closeTomModal">&times;</span>
-      <h1 class="TomModalName" style="color:black">Tomas</h1>
+      <iframe src="https://readymag.com/u38532320/1883919/" width=100% height=100%></iframe>
       </div>
       </div>`);
     modalInteraction();}
   insertModal();
+
+

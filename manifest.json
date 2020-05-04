@@ -4,23 +4,20 @@
   "description": "L'extension officielle de Thomas",
   "manifest_version": 2,
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "contextMenus"
   ],
   "browser_action": {
-    "default_icon": "icons/favicon-96.ico",
+    "default_icon": "images/favicon-96.ico",
     "default_title": "ExdeTo"
+  },
+  "icons": {
+    "16": "images/favicon-96.ico",
+    "32": "images/favicon-96.ico",
+    "48": "images/favicon-96.ico",
+    "128": "images/favicon-96.ico"
   },
    "background": {
     "scripts": ["execute.js"]
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": ["scripts/insert.js"],
-      "run_at": "document_end"
-    }
-  ]
+  }
 }
