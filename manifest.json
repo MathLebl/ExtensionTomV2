@@ -19,9 +19,7 @@
         "http://*/*",
         "https://*/*"
       ],
-      "exclude_matches": [
-      ],
-      // "js": ["scripts/analyzeText-appendTags.js"],
+      "js": ["scripts/insert.js"],
       "run_at": "document_end"
     }
   ]

@@ -59,18 +59,6 @@ function insertModal() {
     cursor: pointer;
   }
 
-  #TomLink {
-    transition: transform 0.3s ease;
-  }
-
-  #TomLink:hover {
-    transform: scale(2);
-  }
-
-  #TomLogo {
-    position: absolute;
-  }
-
   h1 {
 
   }
